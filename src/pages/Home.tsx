@@ -1,9 +1,9 @@
-
+import GrowthSection from "../components/GrowthSection";
 
 const Home = () => {
    return (
       <div>
-          <h1>Home Page</h1>
+         <GrowthSection />
       </div>
    );
 };
