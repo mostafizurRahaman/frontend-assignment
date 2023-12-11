@@ -1,4 +1,4 @@
-import GrowthSection from "../components/GrowthSection";
+import GrowthSection from "../components/GrowthSection/GrowthSection";
 
 const Home = () => {
    return (

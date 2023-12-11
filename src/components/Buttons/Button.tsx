@@ -1,4 +1,4 @@
-import { IButton } from "../types";
+import { IButton } from "../../types";
 import { GoArrowUpRight } from "react-icons/go";
 
 const Button = ({ containerStyles, text, isDisabled, action }: IButton) => {
