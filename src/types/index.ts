@@ -1,3 +1,4 @@
+
 import { MouseEvent } from "react";
 
 export type IOnClick = (e: MouseEvent<HTMLButtonElement>) => void;
@@ -14,3 +15,5 @@ export interface IFeature {
    title: string;
    description: string;
 }
+
+export type TBenefits = string[];
