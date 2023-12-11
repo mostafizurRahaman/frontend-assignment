@@ -6,7 +6,7 @@ import styles from "./ManageCardSection.module.css";
 
 const ManageCardSection = () => {
    return (
-      <section className="flex md:flex-row flex-col items-start  gap-3 md:gap-5 justify-between mt-10 ">
+      <section className="flex md:flex-row flex-col items-start  gap-3 md:gap-5 justify-between mt-10  px-10">
          <div
             className={`flex items-start  relative justify-start md:w-1/2 before:min-w-full before:h-[200px]    before:translate-y-[-20%]  before:block  before:bg-cover  before:absolute before:bottom-0 before:left-0  ${styles.image}   `}
          >

@@ -1,11 +1,13 @@
 import GrowthSection from "../components/GrowthSection/GrowthSection";
 import ManageCardSection from "../components/ManageCardSection/ManageCardSection";
+import TestimonialSection from "../components/TestimonialSection";
 
 const Home = () => {
    return (
-      <div className="px-10">
+      <div className="">
          <GrowthSection />
          <ManageCardSection />
+         <TestimonialSection />
       </div>
    );
 };

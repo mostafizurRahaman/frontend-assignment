@@ -8,10 +8,9 @@ export default {
             secondary: "#000000",
             accent: "#caef45",
             info: "rgba(255, 255, 255, 0.7)",
+            warn: "#212121",
          },
       },
    },
    plugins: [],
 };
-
-
