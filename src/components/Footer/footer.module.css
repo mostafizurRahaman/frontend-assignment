@@ -1,0 +1,4 @@
+.footerInput::before {
+   content: "";
+   background: url("../../assets/inputIcon.png") no-repeat;
+}

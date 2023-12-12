@@ -1,9 +1,15 @@
-
+import Footer from "../components/Footer";
+import GrowthSection from "../components/GrowthSection/GrowthSection";
+import ManageCardSection from "../components/ManageCardSection/ManageCardSection";
+import TestimonialSection from "../components/TestimonialSection";
 
 const Home = () => {
    return (
-      <div>
-          <h1>Home Page</h1>
+      <div className="">
+         <GrowthSection />
+         <ManageCardSection />
+         <TestimonialSection />
+         <Footer />
       </div>
    );
 };
