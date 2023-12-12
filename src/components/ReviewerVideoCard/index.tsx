@@ -1,11 +1,13 @@
-import React from "react";
 import playButton from "../../assets/playButton.png";
 import { IReviewVideoCard } from "../../types";
+
+import thumbnail from "../../assets/video.png";
 
 const ReviewerVideoCard = ({ setIsOpen }: IReviewVideoCard) => {
    return (
       <div className="   w-[300px] h-[300px]   md:w-full md:h-auto lg:min-w-[300px] mx-auto  lg:w-[300px] lg:h-[300px] relative">
          <video
+            poster={thumbnail}
             className="   w-[300px] h-[300px] md:w-full md:h-auto lg:w-min-[300px] lg:h-[300px] rounded-2xl"
             width="300"
             height="338"
