@@ -7,7 +7,7 @@ import H3 from "../Headings/H3";
 import styles from "./footer.module.css";
 const Footer = () => {
    return (
-      <footer>
+      <footer className="flex flex-col">
          <div className="bg-primary py-20 px-5 grid grid-cols-1   md:grid-cols-12 gap-5 w-full">
             <div className="md:col-span-4">
                <img src={logo} className="object-contain mb-3" alt="" />
