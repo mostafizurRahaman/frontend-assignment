@@ -7,13 +7,13 @@ import "react-modal-video/css/modal-video.min.css";
 const TestimonialSection = () => {
    const [isOpen, setIsOpen] = useState<boolean>(false);
    return (
-      <section className=" mt-20 p-10 md:p-20 bg-secondary w-full ">
-         <div className="bg-warn p-12 rounded-3xl flex flex-col gap-10">
+      <section className=" mt-20 p-5 md:p-20 bg-secondary w-full ">
+         <div className="max-w-7xl mx-auto  bg-warn p-6 md:p-12 rounded-3xl flex flex-col gap-10">
             <div className="">
                <h2 className="  text-3xl md:text-4xl font-bold mt-5 text-primary ">
-                  <span className="text-info italic">Kind words </span> from our{" "}
-                  <br />
-                  customers
+                  <span className="text-info italic">Kind words </span> from our
+                  <br className=" hidden  md:block" />
+                  <span className="ml-1 md:ml-0"> customers</span>
                </h2>
             </div>
             <div className="flex flex-col  lg:flex-row gap-20">

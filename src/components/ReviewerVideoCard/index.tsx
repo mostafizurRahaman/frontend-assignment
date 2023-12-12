@@ -5,10 +5,10 @@ import thumbnail from "../../assets/video.png";
 
 const ReviewerVideoCard = ({ setIsOpen }: IReviewVideoCard) => {
    return (
-      <div className="   w-[300px] h-[300px]   md:w-full md:h-auto lg:min-w-[300px] mx-auto  lg:w-[300px] lg:h-[300px] relative">
+      <div className="   w-[260px] h-[260px]   md:w-full md:h-auto lg:min-w-[300px] mx-auto  lg:w-[300px] lg:h-[300px] relative flex items-center justify-center">
          <video
             poster={thumbnail}
-            className="   w-[300px] h-[300px] md:w-full md:h-auto lg:w-min-[300px] lg:h-[300px] rounded-2xl"
+            className="  rounded-2xl"
             width="300"
             height="338"
             controls

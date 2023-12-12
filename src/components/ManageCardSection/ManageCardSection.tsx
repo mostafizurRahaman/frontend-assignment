@@ -6,18 +6,18 @@ import styles from "./ManageCardSection.module.css";
 
 const ManageCardSection = () => {
    return (
-      <section className="flex md:flex-row flex-col items-start  gap-3 md:gap-5 justify-between mt-10  px-10">
+      <section className="flex lg:flex-row flex-col items-start  gap-3 md:gap-5 justify-between mt-10  px-5  md:px-10 lg:px-16 max-w-7xl mx-auto ">
          <div
-            className={`flex items-start  relative justify-start md:w-1/2 before:min-w-full before:h-[200px]    before:translate-y-[-20%]  before:block  before:bg-cover  before:absolute before:bottom-0 before:left-0  ${styles.image}   `}
+            className={`flex items-start  relative justify-start lg:w-1/2 before:min-w-full before:h-[200px]    before:translate-y-[-20%]  before:block  before:bg-cover  before:absolute before:bottom-0 before:left-0  ${styles.image}   `}
          >
             <img
                src={cardImage}
-               className={`object-cover relative md:w-[90%]   `}
+               className={`object-cover relative w-full h-auto md:w-[90%]   `}
                alt=""
             />
          </div>
-         <div className="text-start w-full md:w-1/2   flex flex-col  gap-7  justify-between ">
-            <h2 className="  text-4xl md:text-5xl font-bold mt-5 ">
+         <div className="text-start w-full lg:w-1/2   flex flex-col  gap-7  justify-between ">
+            <h2 className="text-4xl md:text-5xl font-bold mt-5 ">
                Manage{" "}
                <span className="italic ">
                   all your <br />
