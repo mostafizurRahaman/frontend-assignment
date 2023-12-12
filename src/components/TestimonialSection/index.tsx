@@ -1,8 +1,11 @@
+import ModalVideo from "react-modal-video";
 import BrandSlider from "../BrandSlider";
 import ReviewerVideoCard from "../ReviewerVideoCard";
 import ReviewCard from "../reviewCard";
-
+import { useState } from "react";
+import "react-modal-video/css/modal-video.min.css";
 const TestimonialSection = () => {
+   const [isOpen, setIsOpen] = useState<boolean>(false);
    return (
       <section className=" mt-20 p-10 md:p-20 bg-secondary w-full ">
          <div className="bg-warn p-12 rounded-3xl flex flex-col gap-10">
@@ -25,7 +28,17 @@ const TestimonialSection = () => {
                   designation="Founder & CEO, Thunder"
                ></ReviewCard>
 
-               <ReviewerVideoCard />
+               <ReviewerVideoCard setIsOpen={setIsOpen} />
+            </div>
+            <div>
+               <ModalVideo
+                  channel="youtube"
+                  youtube={{ mute: 0, autoplay: 0 }}
+                  allowFullScreen={true}
+                  isOpen={isOpen}
+                  videoId="fiQ4QlJTJO4"
+                  onClose={() => setIsOpen(false)}
+               />
             </div>
             <BrandSlider></BrandSlider>
          </div>

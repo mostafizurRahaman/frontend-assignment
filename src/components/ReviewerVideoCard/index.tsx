@@ -1,6 +1,8 @@
+import React from "react";
 import playButton from "../../assets/playButton.png";
+import { IReviewVideoCard } from "../../types";
 
-const ReviewerVideoCard = () => {
+const ReviewerVideoCard = ({ setIsOpen }: IReviewVideoCard) => {
    return (
       <div className="   w-[300px] h-[300px]   md:w-full md:h-auto lg:min-w-[300px] mx-auto  lg:w-[300px] lg:h-[300px] relative">
          <video
@@ -18,10 +20,12 @@ const ReviewerVideoCard = () => {
                type="video/ogg"
             />
          </video>
+
          <img
             src={playButton}
             alt="palyButton"
-            className=" w-[80px]  cursor-pointer h-auto absolute top-[50%] left-1/2 translate-x-[-50%] translate-y-[-50%]"
+            className=" w-[80px]  cursor-pointer h-auto absolute top-[50%] left-1/2 translate-x-[-50%] translate-y-[-50%] "
+            onClick={() => setIsOpen(true)}
          />
       </div>
    );

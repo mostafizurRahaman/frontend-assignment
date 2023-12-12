@@ -42,3 +42,9 @@ export interface TH3 {
    text: string;
    elementStyles?: string;
 }
+
+
+
+export interface IReviewVideoCard {
+   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
