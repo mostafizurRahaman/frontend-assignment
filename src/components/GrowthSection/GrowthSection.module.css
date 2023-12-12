@@ -1,0 +1,29 @@
+.accountingSoftware::before {
+   /* content: "";
+   width: 500px;
+   height: 500px; */
+   background: url("../../assets/bg_gradient.png") no-repeat;
+   /* background-size: cover;
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transform: translate(25%, 50%);
+   z-index: -30; */
+}
+.accountingSoftware::after {
+   /* content: "";
+   width: 500px;
+   height: 500px; */
+   background: url("../../assets/yeallow_gradient.png") no-repeat;
+   /* background-size: cover;
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transform: translate(80%, 50%);
+   z-index: -30; */
+}
+
+
+
