@@ -27,3 +27,18 @@ export interface IFeature {
 }
 
 export type TBenefits = string[];
+
+export interface IInputBox {
+   type: string;
+   name: string;
+   label?: string;
+   placeholder: string;
+   initialValue?: string | number;
+   errorMsg?: string;
+   containerStyles?: string;
+}
+
+export interface TH3 {
+   text: string;
+   elementStyles?: string;
+}

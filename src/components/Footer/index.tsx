@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { pages, utilityPages } from "../../constants/pages";
-
+import InputBox from "../InputFields";
+import SocialMedia from "../SocialMedia/SocialMedia";
+import H3 from "../Headings/H3";
+import styles from "./footer.module.css";
 const Footer = () => {
    return (
-      <footer className="bg-primary py-20 px-10">
-         <div>
-            <img src={logo} className="object-contain" alt="" />
+      <footer className="bg-primary py-20 px-5 grid grid-cols-1   md:grid-cols-12 gap-5 w-full">
+         <div className="md:col-span-4">
+            <img src={logo} className="object-contain mb-3" alt="" />
             <p>
                Faster payments, Expense reports done right. Budgeting made easy.
             </p>
          </div>
-         <div>
-            <h3>pages</h3>
+         <div className="md:col-span-2">
+            <H3 text="pages"></H3>
             <ul className="flex flex-col justify-start  gap-3 capitalize">
                {pages.map((page: string, idx: number) => (
                   <li key={idx}>
@@ -21,8 +24,8 @@ const Footer = () => {
                ))}
             </ul>
          </div>
-         <div>
-            <h3>utility pages</h3>
+         <div className="md:col-span-2 ">
+            <H3 text="utility pages"></H3>
             <ul className="flex flex-col justify-start  gap-3 capitalize">
                {utilityPages.map((page: string, idx: number) => (
                   <li key={idx}>
@@ -32,8 +35,16 @@ const Footer = () => {
             </ul>
          </div>
 
-         <div>
-            <h3>Subscribe to our newsLetter</h3>
+         <div className="md:col-span-3 flex flex-col gap-3 w-full">
+            <H3 text="Subscribe to our newsLetter"></H3>
+            <p>*Only valuable resource no bullshit</p>
+            <InputBox
+               type="email"
+               name="email"
+               placeholder="Enter your e-mail"
+               containerStyles={`before:absolute  before:block ${styles.footerInput}`}
+            ></InputBox>
+            <SocialMedia></SocialMedia>
          </div>
       </footer>
    );
