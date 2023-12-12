@@ -42,7 +42,7 @@ const Footer = () => {
                type="email"
                name="email"
                placeholder="Enter your e-mail"
-               containerStyles={`before:absolute  before:block ${styles.footerInput}`}
+               containerStyles={`before:absolute  before:w-10 before:h-10 before:top-1/3 before:right-0 before:block ${styles.footerInput}`}
             ></InputBox>
             <SocialMedia></SocialMedia>
          </div>

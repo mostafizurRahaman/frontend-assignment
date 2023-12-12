@@ -13,7 +13,7 @@ const InputBox = ({
       <div>
          <div className="flex gap-2 items-center flex-grow w-full">
             <div
-               className={`flex  gap-3 flex-col relative w-full ${containerStyles}  `}
+               className={`flex  gap-3 flex-col relative ${containerStyles}  `}
             >
                {label && <label htmlFor={name}>{label}</label>}
                <input
